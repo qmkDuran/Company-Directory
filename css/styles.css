@@ -1,0 +1,143 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.awesome {
+  font-weight: bold;
+}
+
+body {
+  position: relative;
+  font-size: 16px;
+  font-family: 'Exo 2', sans-serif;
+  font-weight: bold;
+  color: rgba(79, 79, 79, 0.7);
+  background-color: rgb(252, 252, 252);
+}
+
+header {
+  margin: 40px 0 25px 25px;
+}
+
+h1 {
+  font-size: 1.1em;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+h1, 
+h2 {
+  color: rgba(36, 36, 36, 0.7);
+}
+
+h2 {
+  font-size: 1em;
+}
+
+p {
+  font-size: .7em;
+  font-weight: 300;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, max-content);
+  grid-template-rows: repeat(4, 1fr);
+  grid-gap: 25px;
+  justify-content: center;
+  
+}
+
+.employeecard {
+  display: flex;
+  flex-basis: auto;
+  background-color: white;
+  align-items: center;
+  border: 2px solid rgb(76, 76, 77);
+  border-radius: 5px;
+  width: 310px;
+  height: 140px;
+}
+
+.avatar {
+  border-radius: 50%;
+  height: 90px;
+  margin: 15px;
+}
+
+.text-container {
+  margin-right: 15px;
+  
+}
+
+.name, .email {
+  font-weight: bold;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(100, 100, 100, 0.4);
+}
+
+.modal {
+  width: 340px;
+  height: 440px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 95px;
+  background: white;
+  border-radius: 5px;
+}
+
+.modal-close {
+  width: 40px;
+  font-size: 1.2em;
+  display: flex;
+  margin: 0px 0px 0px 315px;
+  background-color: transparent; 
+  border: none;
+  cursor: pointer;
+} 
+
+.modal-content {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+}
+
+.modal .avatar {
+  height: 140px;
+}
+
+.modal .text-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 0;
+}
+
+.modal .text-container p {
+  margin-top: 13px;
+}
+
+hr {
+  width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+  margin: 25px 0 20px 0;
+  color: rgba(79, 79, 79, 0.7);
+}
+
+.hidden {
+  display: none;
+}
+
+.address {
+  font-weight: bold;
+}
